@@ -1,0 +1,30 @@
+	Bai15 ArrayMethods
+1.
+/*
+	Viết 1 chương trình xóa đi n phần tử cuối cùng của 1 array
+*/
+function removeEnd(arr, n) {
+  var arrKq = arr.slice(0, arr.length - n);
+  return arrKq;
+}
+var arr = [2, 3, 1, 8, 9, 7];
+removeEnd(arr, 3);
+
+2.
+/**
+ * Đọc và dịch các method đã học từ MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+ * Lấy ví dụ cho các trường hợp input khác nhau của mỗi method
+ * Mục đích của bài tập này: Giúp bạn học cách tự tra cứu, đọc tài liệu.
+ * Đây là một kĩ năng không thể thiếu của 1 developer.
+ */
+
+3.
+/*
+	Viết 1 chương trình xóa đi n phần tử cuối cùng của 1 array
+*/
+function removeEnd(arr, n) {
+  var arrKq = arr.slice(0, arr.length - n);
+  return arrKq;
+}
+var arr = [2, 3, 1, 8, 9, 7];
+removeEnd(arr, 3);
