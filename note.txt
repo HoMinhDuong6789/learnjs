@@ -1,0 +1,10 @@
+Kiến thức cần có:
+	kiến thức cơ bản về JS
+	kiến thức DOM trong JS
+	kiến thức về Array và Object trong JS
+	kiến thức về localStorage trong JS
+	kiến thức về HTML CSS
+
+Bài 16: Dùng Function như tham số callback
+
+
