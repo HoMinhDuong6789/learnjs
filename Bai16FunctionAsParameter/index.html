@@ -22,8 +22,8 @@
       //     console.log("bla bla");
       // });
       /*
-	Viết 1 chương trình xóa đi n phần tử cuối cùng của 1 array
-*/
+      	Viết 1 chương trình xóa đi n phần tử cuối cùng của 1 array
+      */
       function removeEnd(arr, n) {
         //     var count=0;
         //   for(i=0;i>arr.length;i++){
@@ -140,6 +140,53 @@
         // });
       }
       readyToPutInTheDOM(users);
+
+      // Lesson 18 array.filter
+      console.log("Bai18");
+      var numbers = [1, 2, 3, 4, 6, 66, 7];
+      var evenNumbers = numbers.filter(function (number) {
+        return number % 2 === 0;
+      });
+      console.log(evenNumbers);
+
+      //bai1
+      // Given an array of numbers, return a new array that has only the numbers that are 5 or greater.
+      function fiveAndGreaterOnly(arr) {
+        return arr.filter(function (number) {
+          return number >= 5 === true;
+        });
+      }
+      console.log(fiveAndGreaterOnly(numbers));
+
+      //bai2
+      // Given an array of numbers, return a new array that only includes the even numbers.
+      function evensOnly(arr) {
+        return arr.filter(function (number) {
+          return number % 2 === 0;
+        });
+      }
+
+      //bai3
+      /**
+       * Give a list of students, filter out non-female
+       */
+
+      var members = [
+        { name: "Lan", gender: "female" },
+        { name: "Linh", gender: "female" },
+        { name: "Trung", gender: "male" },
+        { name: "Peter", gender: "gay" },
+      ];
+      function filterOutFemales(members) {
+        var result=[];
+        members.filter((c) => {
+          if (c.gender !== "female") {
+            result.push(c);
+          }
+        });
+        return result;
+      }
+      console.log(filterOutFemales(members));
     </script>
   </body>
 </html>

@@ -159,3 +159,11 @@ function readyToPutInTheDOM(arr) {
         document.write("<h2>" + c.age + "</h2>");
     });
 }
+
+
+// Lesson 18 array.filter
+var numbers = [1, 2, 3, 4, 6, 66, 7];
+var evenNumbers=numbers.filter(function(number){
+    return number%2==0;
+});
+evenNumbers;
