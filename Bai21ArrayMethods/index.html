@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col form-group">
+        <label for="genderFilter">Gender</label>
+        <select class="form-control" id="genderFilter">
+          <option value="all">All</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+    </div>
+    <ul class="list-group" id="userList">
+      <!-- <li class="list-group-item">Tom</li>
+        <li class="list-group-item">Bill</li>
+        <li class="list-group-item">Will</li>
+        <li class="list-group-item">Bond</li>
+        <li class="list-group-item">Jame</li>-->
+    </ul>
+    <script>
+      var users = [
+        { name: "Tom", gender: "male" },
+        { name: "Sandy", gender: "female" },
+        { name: "Daisy", gender: "female" },
+        { name: "Jenifer", gender: "female" },
+        { name: "Bond", gender: "male" },
+        { name: "Jame", gender: "male" },
+        { name: "Bill", gender: "male" },
+      ];
+
+      var userList = $("#userList");
+      var genderFilter = $("#genderFilter");
+      render(userList, users);
+
+      genderFilter.on("change", function () {
+        var selectedGender = this.value; //male or female
+
+        var filterUsers = users.filter(function (user) {
+          return user.gender === selectedGender;
+        });
+        render(userList, filterUsers);
+      });
+
+      function render(container, items) {
+        var htmlItems = items.map(function (item) {
+          return '<li class="list-group-item">' + item.name + "</li>";
+        });
+        var html = htmlItems.join(""); //'' de thay cho mac dinh , o giua cac phan tu join
+        container.html(html);
+      }
+    </script>
+  </body>
+</html>
