@@ -173,3 +173,10 @@ evenNumbers;
 //Lesson19 array.find
 // no se duyet qua tung phan tu mot, khi nao tim duoc phan tu thoa man dieu kien thi dung lai va khong tim kiem tu phan tu khac nua
 //chi tra ve mot phan tu duy nhat
+
+
+//lesson20 array.reduce
+/*
+    reduce giam nhieu phan tu trong mot mang, tra ve 
+
+*/
