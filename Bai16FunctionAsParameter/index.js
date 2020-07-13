@@ -162,8 +162,14 @@ function readyToPutInTheDOM(arr) {
 
 
 // Lesson 18 array.filter
+// tra ve nhung gia tri thoa man dieu kien
 var numbers = [1, 2, 3, 4, 6, 66, 7];
 var evenNumbers=numbers.filter(function(number){
     return number%2==0;
 });
 evenNumbers;
+
+
+//Lesson19 array.find
+// no se duyet qua tung phan tu mot, khi nao tim duoc phan tu thoa man dieu kien thi dung lai va khong tim kiem tu phan tu khac nua
+//chi tra ve mot phan tu duy nhat
