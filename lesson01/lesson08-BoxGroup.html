@@ -1,69 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
 
-    <style>
-      * {
-        margin: 0px;
-        padding: 0px;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
 
-      .boxx {
-        width: 250px;
-        height: 250px;
-        border: 2px solid sienna;
-        margin: 20px auto; /*left=right=auto*/
-        padding: 5px;
-        text-align: justify;
-      }
-      .box {
-        width: 150px;
-        height: 150px;
-        line-height: 150px;
-        text-align: center;
-      }
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
 
-      .boxA{
-        background-color: red;
-        float: left;
-      }
-      .boxB{
-        background-color: blue;
-        float: left;
-      }
-      .boxC{
-        background-color: orange;
-        float: right;
-      }
-      .boxD{
-        background-color: lawngreen;
-        width: 100%;
-       
-      }
-      .clr{
-        clear: both;
-      }
+    #main{
+      width: 100%;
+      height: 0 auto;
+    }
 
-    </style>
-  </head>
-  <br>
-    <div class="boxx">
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo
-      perspiciatis ducimus nostrum dolores? Earum laudantium sit nulla laborum
-      quia deserunt veritatis reprehenderit. Minus quidem facere quisquam ea eum
-      quo consectetur?
-    </div>
-  </br>
-    <div class="box boxA">Box A</div>
-    <div class="box boxB">Box B</div>
-    <div class="box boxC">Box C</div>
-    <div class="clr"></div>
-    <div class="box boxD">Box D</div>
-  
-  </br>
-  </body>
+    #left{
+      width: 28%;
+      background-color: burlywood;
+      float: left;
+      padding: 0 1%;
+    }
+    #contain{
+      width: 38%;
+      background-color: chartreuse;
+      float: left;
+      padding: 0 1%;
+    }
+    #right{
+      width: 28%;
+      background-color: rebeccapurple;
+      float: right;
+      padding: 0 1%;
+    }
+
+  </style>
+</head>
+<br>
+<div id="main">
+  <div id="left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates consequatur nemo dolores harum
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates consequatur nemo dolores harum
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates consequatur nemo dolores harum
+  </div>
+  <div id="contain">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates consequatur nemo dolores harum
+    est beatae id, quis, quia autem quas magni cum </div>
+  <div id="right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates consequatur nemo dolores harum 
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates consequatur nemo dolores harum
+    ut eius odit! Porro numquam impedit quisquam? Dolorum.</div>
+</div>
+</body>
 
 </html>
