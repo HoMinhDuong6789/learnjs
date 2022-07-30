@@ -66,4 +66,24 @@ for(let key in networkdata){
  * 
  * ngược lại thì khi khai bái function declaration thì chúng ta có thể thực hiện được điều đó. Đây chính là điềm khác biệt
 */
+
+
+
+/**
+ *  kiểu dữ liệu trogn js
+ * 1. kiểu dữ liệu nguyên thủy - primitive Data
+ *  Number
+ *  String
+ *  Boolean
+ *  Undefinded
+ *  Null
+ *  Symbol
+ * 
+ * 
+ * 2. Kiểu dữ liệu phức tạp - Coplex Data
+ *  Function
+ *  Object
+ * 
+ * 
+ * 
  
