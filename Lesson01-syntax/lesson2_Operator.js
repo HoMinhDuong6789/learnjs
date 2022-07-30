@@ -38,5 +38,8 @@
  * 
  * 
  * 
- *   
+ * Note:
+ *  trong js có 6 giá trị khi convert sang boolean -> false
+ * 0, '', null, underfined, NaN, flase
+ * 
  */
